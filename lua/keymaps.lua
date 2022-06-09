@@ -68,10 +68,11 @@ vim.api.nvim_set_keymap('x', '<A-K>', ":move '<-2<CR>gv-gv", opts)
 --
 
 -- Use the same key bindings for switching windows in normal mode
--- Allow accessing normal mode in a terminal
-vim.api.nvim_set_keymap('t', '<C-[>', '<C-\\><C-N>', opts)
 vim.api.nvim_set_keymap('t', '<C-H>', '<C-\\><C-N><C-W>H', opts)
 vim.api.nvim_set_keymap('t', '<C-J>', '<C-\\><C-N><C-W>J', opts)
 vim.api.nvim_set_keymap('t', '<C-K>', '<C-\\><C-N><C-W>K', opts)
 vim.api.nvim_set_keymap('t', '<C-L>', '<C-\\><C-N><C-W>L', opts)
+
+-- Use a single key press to enter Normal mode
+vim.api.nvim_set_keymap('t', '<A-\\>', '<C-\\><C-N>', opts)
 

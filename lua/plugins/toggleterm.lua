@@ -1,7 +1,7 @@
 local toggleterm = require('toggleterm')
 
 toggleterm.setup({
-  open_mapping = [[<c-\>]],
+  open_mapping = '<A-[>',
   insert_mappings = true,
   terminal_mappings = true,
 	shell = 'bash'
