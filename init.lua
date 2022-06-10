@@ -5,7 +5,7 @@ if success then
 end
 
 require('keymaps')
-require('settings')
+require('options')
 
 -- require plugins last so that if errors are encountered the rest of the configuration is loaded
 require('plugins')
