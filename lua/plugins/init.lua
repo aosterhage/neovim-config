@@ -142,6 +142,11 @@ packer.startup(
         require('plugins.nvim-treesitter')
       end
     }
+    use { 'ahmedkhalf/project.nvim',
+      config = function()
+        require('plugins.project')
+      end
+    }
     use { 'kdheepak/tabline.nvim',                          -- tab and buffer line
       config = function()
         require('plugins.tabline')
