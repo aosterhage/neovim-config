@@ -101,7 +101,7 @@ which_key.register({
     name = 'tab',
 
     c = { '<Cmd>tabclose<CR>', 'Close' },
-    f = { '<Cmd>Telescope tele_tabby list<CR>', 'Find' },
+    f = { '<Cmd>lua require(\'telescope\').extensions.tele_tabby.list(require(\'telescope.themes\').get_dropdown({previewer = false}))<CR>', 'Find' },
     n = { '<Cmd>tabnext<CR>', 'Next' },
     N = { '<Cmd>tabnew<CR>', 'New' },
     p = { '<Cmd>tabprev<CR>', 'Previous' }
