@@ -17,7 +17,7 @@ which_key.register({
     name = 'buffer',
 
     c = { '<Cmd>Bdelete!<CR>', 'Close' },
-    s = { '<Cmd>lua require(\'telescope.builtin\').buffers(require(\'telescope.themes\').get_dropdown({previewer = false}))<CR>', 'Search' },
+    f = { '<Cmd>lua require(\'telescope.builtin\').buffers(require(\'telescope.themes\').get_dropdown({previewer = false}))<CR>', 'Find' },
     n = { '<Cmd>bnext<CR>', 'Next' },
     N = { '<Cmd>enew<CR>', 'New' },
     p = { '<Cmd>bprevious<CR>', 'Previous' }
@@ -77,7 +77,7 @@ which_key.register({
   p = {
     name = 'project',
 
-    s = { '<Cmd>lua require(\'telescope\').extensions.projects.projects()<CR>', 'Search Projects' }
+    f = { '<Cmd>lua require(\'telescope\').extensions.projects.projects()<CR>', 'Find' }
   }
 }, opts)
 
@@ -101,7 +101,7 @@ which_key.register({
     name = 'tab',
 
     c = { '<Cmd>tabclose<CR>', 'Close' },
-    s = { '<Cmd>Telescope tele_tabby list<CR>', 'Search' },
+    f = { '<Cmd>Telescope tele_tabby list<CR>', 'Find' },
     n = { '<Cmd>tabnext<CR>', 'Next' },
     N = { '<Cmd>tabnew<CR>', 'New' },
     p = { '<Cmd>tabprev<CR>', 'Previous' }
