@@ -25,6 +25,15 @@ which_key.register({
 }, opts)
 
 which_key.register({
+  f = {
+    name = 'file',
+
+    f = { '<Cmd>lua require(\'telescope.builtin\').find_files(require(\'telescope.themes\').get_dropdown({previewer = false}))<CR>', 'Find' },
+    r = { '<Cmd>Telescope oldfiles<CR>', 'Recent' },
+  }
+}, opts)
+
+which_key.register({
   g = {
     name = 'git',
 
@@ -78,11 +87,9 @@ which_key.register({
 
     b = { '<Cmd>Telescope git_branches<CR>', 'Branches' },
     c = { '<Cmd>Telescope commands<CR>', 'Commands' },
-    f = { '<Cmd>lua require(\'telescope.builtin\').find_files(require(\'telescope.themes\').get_dropdown({previewer = false}))<CR>', 'Workspace Files' },
     h = { '<Cmd>Telescope help_tags<CR>', 'Help' },
     k = { '<Cmd>Telescope keymaps<CR>', 'Keymaps' },
     m = { '<Cmd>Telescope man_pages<CR>', 'Man Pages' },
-    r = { '<Cmd>Telescope oldfiles<CR>', 'Recent Files' },
     R = { '<Cmd>Telescope registers<CR>', 'Registers' },
     t = { '<Cmd>Telescope current_buffer_fuzzy_find theme=dropdown<CR>', 'Buffer Text' },
     T = { '<Cmd>Telescope live_grep<CR>', 'Workspace Text' }
