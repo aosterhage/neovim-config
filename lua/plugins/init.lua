@@ -128,14 +128,6 @@ packer.startup(
         require('plugins.lsp')
       end
     }
-    use { 'kyazdani42/nvim-tree.lua',                       -- directory explorer to replace netrw
-      requires = {
-        { 'kyazdani42/nvim-web-devicons' }
-      },
-      config = function()
-        require('plugins.nvim-tree')
-      end
-    }
     use { 'nvim-treesitter/nvim-treesitter',                -- easy configuration for treesitter (things like improved syntax highlighting)
       run = { ':TSUpdate' },
       config = function()
@@ -158,7 +150,8 @@ packer.startup(
         { 'nvim-telescope/telescope-fzf-native.nvim',
           run = { 'make' }
         },
-        { 'TC72/telescope-tele-tabby.nvim' }                -- add tab support to telescope
+        { 'nvim-telescope/telescope-file-browser.nvim' },   -- add file browswing support
+        { 'TC72/telescope-tele-tabby.nvim' }                -- add tab support
       },
       config = function()
         require('plugins.telescope')

@@ -29,6 +29,12 @@ telescope.setup({
   }
 })
 
+--
+-- Extensions
+--
+
+telescope.load_extension('file_browser')
+
 if pcall(require, 'project_nvim') then
   telescope.load_extension('projects')
 end

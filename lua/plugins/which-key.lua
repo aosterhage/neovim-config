@@ -6,8 +6,6 @@ local opts = {
 }
 
 which_key.register({
-  ['e'] = { '<Cmd>NvimTreeToggle<CR>', 'Explorer' },
-  ['w'] = { '<Cmd>w!<CR>', 'Save' },
   ['q'] = { '<Cmd>q!<CR>', 'Quit' },
   ['h'] = { '<Cmd>nohlsearch<CR>', 'No Highlight' },
 }, opts)
@@ -28,8 +26,10 @@ which_key.register({
   f = {
     name = 'file',
 
+    e = { '<Cmd>Telescope file_browser<CR>', 'Explorer' },
     f = { '<Cmd>lua require(\'telescope.builtin\').find_files(require(\'telescope.themes\').get_dropdown({previewer = false}))<CR>', 'Find' },
     r = { '<Cmd>Telescope oldfiles<CR>', 'Recent' },
+    s = { '<Cmd>w!<CR>', 'Save' }
   }
 }, opts)
 
