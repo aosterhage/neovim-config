@@ -39,7 +39,9 @@ packer.startup(
       requires = {
         { 'kyazdani42/nvim-web-devicons' }
       },
-      config = require('plugins.alpha')
+      config = function()
+        require('plugins.alpha')
+      end
     }
     use { 'numToStr/Comment.nvim',                          -- add ease of commenting/uncommenting
       requires = {
@@ -47,30 +49,44 @@ packer.startup(
           requires = { 'nvim-treesitter/nvim-treesitter' }
         }
       },
-      config = require('plugins.Comment')
+      config = function()
+        require('plugins.Comment')
+      end
     }
     use { 'stevearc/dressing.nvim',                         -- provide nice default ui for neovim's `vim.input`, `vim.select`, etc.
-      config = require('plugins.dressing')
+      config = function()
+        require('plugins.dressing')
+      end
     }
     use { 'antoinemadec/FixCursorHold.nvim'}
     use { 'lewis6991/gitsigns.nvim',                        -- show markers for git changes in a file
-      config = require('plugins.gitsigns')
+      config = function()
+        require('plugins.gitsigns')
+      end
     }
     use { 'lewis6991/impatient.nvim' }                      -- speeds up init and profiles
     use { 'lukas-reineke/indent-blankline.nvim',            -- shows markers for indented lines
-      config = require('plugins.indent-blankline')
+      config = function()
+        require('plugins.indent-blankline')
+      end
     }
     use { 'nvim-lualine/lualine.nvim',                      -- status line
       requires = {
         { 'kyazdani42/nvim-web-devicons' }
       },
-      config = require('plugins.lualine')
+      config = function()
+        require('plugins.lualine')
+      end
     }
     use { 'EdenEast/nightfox.nvim',                         -- colorschemes
-      config = require('plugins.nightfox')
+      config = function()
+        require('plugins.nightfox')
+      end
     }
     use { 'windwp/nvim-autopairs',                          -- automatically add and manage pairs (like '()' and '{}')
-      config = require('plugins.nvim-autopairs')
+      config = function()
+        require('plugins.nvim-autopairs')
+      end
     }
     use { 'hrsh7th/nvim-cmp',                               -- completions
       requires = {
@@ -92,32 +108,44 @@ packer.startup(
         { 'hrsh7th/cmp-path' },
         { 'hrsh7th/cmp-cmdline' }
       },
-      config = require('plugins.nvim-cmp')
+      config = function()
+        require('plugins.nvim-cmp')
+      end
     }
     use { 'mfussenegger/nvim-dap',                          -- debugging support via DAP client
       requires = {
         { 'rcarriga/nvim-dap-ui' }
       },
-      config = require('plugins.nvim-dap')
+      config = function()
+        require('plugins.nvim-dap')
+      end
     }
     use { 'williamboman/nvim-lsp-installer',                -- install lsp servers easily (even works on Windows!)
       requires = {
         { 'neovim/nvim-lspconfig' }
       },
-      config = require('plugins.lsp')
+      config = function()
+        require('plugins.lsp')
+      end
     }
     use { 'kyazdani42/nvim-tree.lua',                       -- directory explorer to replace netrw
       requires = {
         { 'kyazdani42/nvim-web-devicons' }
       },
-      config = require('plugins.nvim-tree')
+      config = function()
+        require('plugins.nvim-tree')
+      end
     }
     use { 'nvim-treesitter/nvim-treesitter',                -- easy configuration for treesitter (things like improved syntax highlighting)
       run = { ':TSUpdate' },
-      config = require('plugins.nvim-treesitter')
+      config = function()
+        require('plugins.nvim-treesitter')
+      end
     }
     use { 'kdheepak/tabline.nvim',                          -- tab and buffer line
-      config = require('plugins.tabline')
+      config = function()
+        require('plugins.tabline')
+      end
     }
     use { 'nvim-telescope/telescope.nvim',                  -- fuzzy finder for anything
       requires = {
@@ -127,14 +155,20 @@ packer.startup(
         },
         { 'TC72/telescope-tele-tabby.nvim' }                -- add tab support to telescope
       },
-      config = require('plugins.telescope')
+      config = function()
+        require('plugins.telescope')
+      end
     }
     use { 'akinsho/toggleterm.nvim',                        -- makes using neovim's terminal easier
-      config = require('plugins.toggleterm')
+      config = function()
+        require('plugins.toggleterm')
+      end
     }
     use { 'moll/vim-bbye' }                                 -- close buffers without closing windows
     use { 'folke/which-key.nvim',                           -- keymaps popup menu
-      config = require('plugins.which-key')
+      config = function()
+        require('plugins.which-key')
+      end
     }
 
     -- automatically install plugins when bootstrapping
