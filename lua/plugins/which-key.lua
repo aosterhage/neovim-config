@@ -28,19 +28,19 @@ which_key.register({
   g = {
     name = 'git',
 
-    b = { '<Cmd>Gitsigns blame_line()<CR>', 'Blame' },
+    b = { '<Cmd>Gitsigns blame_line<CR>', 'Blame' },
     B = { '<Cmd>Gitsigns toggle_current_line_blame()<CR>', 'Toggle Blame' },
     c = { '<Cmd>Telescope git_commits<CR>', 'Search Commits' },
     d = { '<Cmd>Gitsigns diffthis HEAD<CR>', 'Diff' },
     f = { '<Cmd>Telescope git_status<CR>', 'Search Changed Files' },
-    n = { '<Cmd>Gitsigns next_hunk()<CR>', 'Next Hunk' },
-    p = { '<Cmd>Gitsigns prev_hunk()<CR>', 'Previous Hunk' },
-    P = { '<Cmd>Gitsigns preview_hunk()<CR>', 'Preview Hunk' },
-    r = { '<Cmd>Gitsigns reset_hunk()<CR>', 'Reset Hunk' },
-    R = { '<Cmd>Gitsigns reset_buffer()<CR>', 'Reset Buffer' },
-    s = { '<Cmd>Gitsigns stage_hunk()<CR>', 'Stage Hunk' },
-    S = { '<Cmd>Gitsigns stage_buffer()<CR>', 'Stage Buffer' },
-    u = { '<Cmd>Gitsigns undo_stage_hunk()<CR>', 'Undo Stage Hunk' }
+    n = { '<Cmd>Gitsigns next_hunk<CR>', 'Next Hunk' },
+    p = { '<Cmd>Gitsigns prev_hunk<CR>', 'Previous Hunk' },
+    P = { '<Cmd>Gitsigns preview_hunk<CR>', 'Preview Hunk' },
+    r = { '<Cmd>Gitsigns reset_hunk<CR>', 'Reset Hunk' },
+    R = { '<Cmd>Gitsigns reset_buffer<CR>', 'Reset Buffer' },
+    s = { '<Cmd>Gitsigns stage_hunk<CR>', 'Stage Hunk' },
+    S = { '<Cmd>Gitsigns stage_buffer<CR>', 'Stage Buffer' },
+    u = { '<Cmd>Gitsigns undo_stage_hunk<CR>', 'Undo Stage Hunk' }
   }
 }, opts)
 
