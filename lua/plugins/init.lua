@@ -58,6 +58,11 @@ packer.startup(
         require('plugins.dressing')
       end
     }
+    use { 'j-hui/fidget.nvim',
+      config = function()
+        require('plugins.fidget')
+      end
+    }
     use { 'antoinemadec/FixCursorHold.nvim'}
     use { 'lewis6991/gitsigns.nvim',                        -- show markers for git changes in a file
       config = function()
