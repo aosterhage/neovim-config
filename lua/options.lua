@@ -39,6 +39,7 @@ vim.opt.shortmess = vim.opt.shortmess + 'c'     -- 'c': don't give |ins-completi
 vim.opt.showmode = false                        -- don't show the mode on the last line, we will include it in lualine
 vim.opt.sidescrolloff = 8                       -- number of columns to keep to the left and right of the cursor at all times
 vim.opt.signcolumn = 'yes'                      -- always show the sign column, otherwise it would shift the text each time
+vim.opt.winbar = '%f'                           -- show winbar for each window with the current file path
 vim.opt.wrap = false                            -- display lines as one long line
 
 -- don't list quickfix buffers

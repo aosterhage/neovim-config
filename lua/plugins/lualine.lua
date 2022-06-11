@@ -18,15 +18,11 @@ lualine.setup({
 	},
   sections = {
     lualine_a = {'mode'},
-    lualine_c = {'diff'},
-    lualine_b = {
-      {
-        'filename',
-        path = 1,
-      }
-    },
+    lualine_b = {},
+    lualine_c = {},
     lualine_x = {'diagnostics', lsp_name, 'filetype'},
-    lualine_y = {'progress', 'location'},
-    lualine_z = {'fileformat', 'encoding'}}
+    lualine_y = {'progress'},
+    lualine_z = {'location'}
+  }
 })
 
