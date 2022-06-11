@@ -5,4 +5,3 @@ tabline.setup({
     show_filename_only = true
   }
 })
-

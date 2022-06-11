@@ -75,4 +75,3 @@ vim.api.nvim_set_keymap('t', '<C-L>', '<C-\\><C-N><C-W>L', opts)
 
 -- Use a single key press to enter Normal mode
 vim.api.nvim_set_keymap('t', '<A-\\>', '<C-\\><C-N>', opts)
-

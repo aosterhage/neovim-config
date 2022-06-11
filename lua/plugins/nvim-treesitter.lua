@@ -20,4 +20,3 @@ nvim_treesitter_configs.setup({
     enable_autocmd = false
   }
 })
-

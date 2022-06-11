@@ -35,7 +35,7 @@ packer.startup(
 
 
     -- my plugins sorted alphabetically
-    use { 'goolord/alpha-nvim',                             -- greeter
+    use { 'goolord/alpha-nvim', -- greeter
       requires = {
         { 'kyazdani42/nvim-web-devicons' }
       },
@@ -43,9 +43,9 @@ packer.startup(
         require('plugins.alpha')
       end
     }
-    use { 'numToStr/Comment.nvim',                          -- add ease of commenting/uncommenting
+    use { 'numToStr/Comment.nvim', -- add ease of commenting/uncommenting
       requires = {
-        { 'JoosepAlviste/nvim-ts-context-commentstring',    -- change the treesitter `commentstring` based on the current line of source; helps with multi-language files
+        { 'JoosepAlviste/nvim-ts-context-commentstring', -- change the treesitter `commentstring` based on the current line of source; helps with multi-language files
           requires = { 'nvim-treesitter/nvim-treesitter' }
         }
       },
@@ -53,7 +53,7 @@ packer.startup(
         require('plugins.Comment')
       end
     }
-    use { 'stevearc/dressing.nvim',                         -- provide nice default ui for neovim's `vim.input`, `vim.select`, etc.
+    use { 'stevearc/dressing.nvim', -- provide nice default ui for neovim's `vim.input`, `vim.select`, etc.
       config = function()
         require('plugins.dressing')
       end
@@ -63,19 +63,19 @@ packer.startup(
         require('plugins.fidget')
       end
     }
-    use { 'antoinemadec/FixCursorHold.nvim'}
-    use { 'lewis6991/gitsigns.nvim',                        -- show markers for git changes in a file
+    use { 'antoinemadec/FixCursorHold.nvim' }
+    use { 'lewis6991/gitsigns.nvim', -- show markers for git changes in a file
       config = function()
         require('plugins.gitsigns')
       end
     }
-    use { 'lewis6991/impatient.nvim' }                      -- speeds up init and profiles
-    use { 'lukas-reineke/indent-blankline.nvim',            -- shows markers for indented lines
+    use { 'lewis6991/impatient.nvim' } -- speeds up init and profiles
+    use { 'lukas-reineke/indent-blankline.nvim', -- shows markers for indented lines
       config = function()
         require('plugins.indent-blankline')
       end
     }
-    use { 'nvim-lualine/lualine.nvim',                      -- status line
+    use { 'nvim-lualine/lualine.nvim', -- status line
       requires = {
         { 'kyazdani42/nvim-web-devicons' }
       },
@@ -83,17 +83,17 @@ packer.startup(
         require('plugins.lualine')
       end
     }
-    use { 'EdenEast/nightfox.nvim',                         -- colorschemes
+    use { 'EdenEast/nightfox.nvim', -- colorschemes
       config = function()
         require('plugins.nightfox')
       end
     }
-    use { 'windwp/nvim-autopairs',                          -- automatically add and manage pairs (like '()' and '{}')
+    use { 'windwp/nvim-autopairs', -- automatically add and manage pairs (like '()' and '{}')
       config = function()
         require('plugins.nvim-autopairs')
       end
     }
-    use { 'hrsh7th/nvim-cmp',                               -- completions
+    use { 'hrsh7th/nvim-cmp', -- completions
       requires = {
         -- needed to show the completion popups
         { 'nvim-lua/popup.nvim' },
@@ -117,7 +117,7 @@ packer.startup(
         require('plugins.nvim-cmp')
       end
     }
-    use { 'mfussenegger/nvim-dap',                          -- debugging support via DAP client
+    use { 'mfussenegger/nvim-dap', -- debugging support via DAP client
       requires = {
         { 'rcarriga/nvim-dap-ui' }
       },
@@ -125,7 +125,7 @@ packer.startup(
         require('plugins.nvim-dap')
       end
     }
-    use { 'williamboman/nvim-lsp-installer',                -- install lsp servers easily (even works on Windows!)
+    use { 'williamboman/nvim-lsp-installer', -- install lsp servers easily (even works on Windows!)
       requires = {
         { 'neovim/nvim-lspconfig' }
       },
@@ -133,7 +133,7 @@ packer.startup(
         require('plugins.lsp')
       end
     }
-    use { 'nvim-treesitter/nvim-treesitter',                -- easy configuration for treesitter (things like improved syntax highlighting)
+    use { 'nvim-treesitter/nvim-treesitter', -- easy configuration for treesitter (things like improved syntax highlighting)
       run = { ':TSUpdate' },
       config = function()
         require('plugins.nvim-treesitter')
@@ -144,31 +144,31 @@ packer.startup(
         require('plugins.project')
       end
     }
-    use { 'kdheepak/tabline.nvim',                          -- tab and buffer line
+    use { 'kdheepak/tabline.nvim', -- tab and buffer line
       config = function()
         require('plugins.tabline')
       end
     }
-    use { 'nvim-telescope/telescope.nvim',                  -- fuzzy finder for anything
+    use { 'nvim-telescope/telescope.nvim', -- fuzzy finder for anything
       requires = {
         { 'nvim-lua/plenary.nvim' },
         { 'nvim-telescope/telescope-fzf-native.nvim',
           run = { 'make' }
         },
-        { 'nvim-telescope/telescope-file-browser.nvim' },   -- add file browswing support
-        { 'TC72/telescope-tele-tabby.nvim' }                -- add tab support
+        { 'nvim-telescope/telescope-file-browser.nvim' }, -- add file browswing support
+        { 'TC72/telescope-tele-tabby.nvim' } -- add tab support
       },
       config = function()
         require('plugins.telescope')
       end
     }
-    use { 'akinsho/toggleterm.nvim',                        -- makes using neovim's terminal easier
+    use { 'akinsho/toggleterm.nvim', -- makes using neovim's terminal easier
       config = function()
         require('plugins.toggleterm')
       end
     }
-    use { 'moll/vim-bbye' }                                 -- close buffers without closing windows
-    use { 'folke/which-key.nvim',                           -- keymaps popup menu
+    use { 'moll/vim-bbye' } -- close buffers without closing windows
+    use { 'folke/which-key.nvim', -- keymaps popup menu
       config = function()
         require('plugins.which-key')
       end
@@ -181,4 +181,3 @@ packer.startup(
     end
   end
 )
-

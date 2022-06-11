@@ -21,4 +21,3 @@ comment.setup({
     })
   end
 })
-

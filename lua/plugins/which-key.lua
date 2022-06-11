@@ -125,11 +125,10 @@ which_key.register({
 
     c = { '<Cmd>close<CR>', 'Close' },
     h = { '<Cmd>wincmd h<CR>', 'Move Left' },
-    H = { '<Cmd>split<CR>', 'New Horizontal'},
+    H = { '<Cmd>split<CR>', 'New Horizontal' },
     j = { '<Cmd>wincmd j<CR>', 'Move Left' },
     k = { '<Cmd>wincmd k<CR>', 'Move Left' },
     l = { '<Cmd>wincmd l<CR>', 'Move Left' },
-    v = { '<Cmd>vsplit<CR', 'New Vertical'},
+    v = { '<Cmd>vsplit<CR', 'New Vertical' },
   }
 }, opts)
-
