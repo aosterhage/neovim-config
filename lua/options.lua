@@ -30,6 +30,7 @@ vim.opt.whichwrap = vim.opt.whichwrap + '<,>,[,],h,l' -- automatically wrap when
 -- Ui --
 vim.opt.completeopt = { 'menuone', 'noselect' } -- use the popup menu even if there's only one match and require the user to select the options
 vim.opt.cursorline = true -- highlight the current line
+vim.opt.guifont = { 'Hack Nerd Font', ':h10' }
 vim.opt.number = true -- set numbered lines
 vim.opt.numberwidth = 4 -- set number column width
 vim.opt.pumheight = 10 -- pop up menu height
