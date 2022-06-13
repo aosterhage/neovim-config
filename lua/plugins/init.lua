@@ -134,6 +134,9 @@ packer.startup(
       end
     }
     use { 'nvim-treesitter/nvim-treesitter', -- easy configuration for treesitter (things like improved syntax highlighting)
+      requires = {
+        {'nvim-treesitter/nvim-treesitter-context'}
+      },
       run = { ':TSUpdate' },
       config = function()
         require('plugins.nvim-treesitter')
